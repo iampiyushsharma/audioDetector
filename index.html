@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
@@ -16,16 +14,22 @@
       <div id="frequency1" class="bar"></div>
     </div>
     <div class="buttons">
-    <div class="button" id="start-btn">Start</div>
-    <div class="button" id="stop-btn">Stop</div>
+      <div class="button" id="start-btn">Start</div>
+      <div class="button" id="stop-btn">Stop</div>
+    </div>
+    <div class="directions">
+      <ul>
+        <li>Click on the "Start" button to detect surrounding noise.</li>
+        <li>The graph will show the surrounding noise. You can see spikes for loud voice or music.</li>
+        <li>Click on the "Stop" button to stop detection.</li>
+      </ul>
+    </div>
+    <div class="decibel" id="decibel">
+      <div class="volume-label" id="volume-label">Volume: Start Please</div>
+      <div class="decibel-value" id="decibel-value">Decibels: 0 dB</div>
+      <div class="frequency-value" id="frequency-value">Frequency: 0 Hz</div>
+    </div>
   </div>
-  <div class="directions">
-    <li>Click On Start Button To detect Surrounding Noise</li>
-    <li>Graph will show Surrounding Noise You can see spikes for loud voice or music</li>
-    <li>Click On Stop button to stop detection</li>
-  </div>
-</div>
   <script src="script.js"></script>
 </body>
-
 </html>

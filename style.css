@@ -1,70 +1,82 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(118, 200, 237);
+  margin: 0;
+  padding: 0;
+  background-color: rgb(118, 200, 237);
 }
-.main{
-    height: 90vh;
+
+.main {
+  height: 90vh;
 }
+
 .title {
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 6px black;
-
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 6px black;
 }
+
 .graph {
-    display: flex;
-    width: 99%;
-    height: 40vh;
-    /* background-color: rgb(234, 226, 218); */
-    position: relative;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    align-items: end;
-    padding: 0;
-
-
+  display: flex;
+  width: 99%;
+  height: 40vh;
+  position: relative;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  align-items: flex-end;
+  padding: 0;
 }
 
 .bar {
-    margin: 0;
-    padding: 0;
-    width: 1px;
-    color: rgb(246, 7, 7);
-    height: 10px;
-    background-color: rgb(246, 7, 7);
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  height: 10px;
+  background-color: rgb(246, 7, 7);
 }
-.buttons{
-    display: flex;
-    justify-content: space-between;
+
+.buttons {
+  display: flex;
+  justify-content: center;
 }
 
 .button {
-    background-color: brown;
-    /* width: ; */
-    color: white;
-    font-weight: 500;
-    font-size: x-large;
-    border-radius: 1rem;
-    /* height: 3vh; */
-    padding: 0.5rem;
-    text-align: center;
-    margin: 2vh;
-    cursor: pointer;
+  background-color: brown;
+  color: white;
+  font-weight: 500;
+  font-size: x-large;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  margin: 2vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.button:hover{
-    color: white;
-    background-color: red;
-}
-.button:active{
-    color: white;
-    background-color: red;
-}  
 
-.directions{
-    margin: 2vh;
+.button:hover {
+  background-color: red;
 }
-.directions li{
-    font-size: large;
-    font-weight: 600;
+
+.button:active {
+  background-color: red;
+}
+
+.directions {
+  margin: 2vh;
+}
+
+.directions li {
+  font-size: large;
+  font-weight: 600;
+}
+
+.decibel {
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+  margin-top: 2vh;
+}
+
+.volume-label,
+.decibel-value,
+.frequency-value {
+  margin-bottom: 1vh;
 }
